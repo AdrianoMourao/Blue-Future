@@ -1,0 +1,64 @@
+unit uGeneratorPDF;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, PReport, PdfDoc,
+  Vcl.StdCtrls, Vcl.Buttons, ShellAPI;
+
+type
+  TForm1 = class(TForm)
+    PReport1: TPReport;
+    PRPage1: TPRPage;
+    btGerarPDF: TBitBtn;
+    PRLayoutPanel1: TPRLayoutPanel;
+    PRText1: TPRText;
+    PRText2: TPRText;
+    PRText3: TPRText;
+    PRText4: TPRText;
+    txtCurso: TPRText;
+    edtCurso: TEdit;
+    edtInstrutor: TEdit;
+    edtObjGeral: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    txtInstrutor: TPRText;
+    txtObjGeral: TPRText;
+    procedure btGerarPDFClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.btGerarPDFClick(Sender: TObject);
+var
+  NomeArquivo : string;
+begin
+  NomeArquivo := 'Teste';
+
+  //Passando os valores dos edits
+  txtCurso.Text := edtCurso.Text;
+  txtInstrutor.Text := edtInstrutor.Text;
+  txtObjGeral.Text := edtObjGeral.Text;
+
+  // Gera e visualiza o PDF
+  PReport1.FileName:=ExtractFilePath(Application.ExeName)+'Arquivos\'+NomeArquivo+'.pdf';
+  PReport1.BeginDoc;
+  PReport1.Print(PRPage1);
+  PReport1.EndDoc;
+
+  //Caso queira visualizar logo ao gerar... se não é só comentar essa linha de baixo
+  ShellExecute(Handle,'open',PChar(ExtractFilePath(Application.ExeName)+'Arquivos\'+NomeArquivo+'.pdf'),nil,nil,SW_SHOWNORMAL);
+end;
+
+end.

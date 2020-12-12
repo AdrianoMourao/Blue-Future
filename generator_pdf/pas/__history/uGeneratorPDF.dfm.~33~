@@ -1,0 +1,770 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BiDiMode = bdLeftToRight
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'GeneratorPDF'
+  ClientHeight = 634
+  ClientWidth = 568
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  ParentBiDiMode = False
+  Position = poMainFormCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PRPage1: TPRPage
+    Left = 624
+    Top = 8
+    Width = 657
+    Height = 1033
+    MarginTop = 32
+    MarginLeft = 32
+    MarginRight = 32
+    MarginBottom = 32
+    object PRLayoutPanel1: TPRLayoutPanel
+      Left = 18
+      Top = 18
+      Width = 568
+      Height = 134
+      object PRText1: TPRText
+        Left = 264
+        Top = 8
+        Width = 121
+        Height = 14
+        FontColor = 7865622
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'PLANO DE ENSINO')
+      end
+      object PRText2: TPRText
+        Left = 0
+        Top = 32
+        Width = 97
+        Height = 14
+        FontColor = 7865622
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Curso:')
+      end
+      object PRText3: TPRText
+        Left = 0
+        Top = 64
+        Width = 97
+        Height = 14
+        FontColor = 7865622
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Instrutor:')
+      end
+      object PRText4: TPRText
+        Left = 0
+        Top = 94
+        Width = 97
+        Height = 14
+        FontColor = 7865622
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Objetivo geral:')
+      end
+      object txtCurso: TPRText
+        Left = 103
+        Top = 32
+        Width = 434
+        Height = 14
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Curso:')
+      end
+      object txtInstrutor: TPRText
+        Left = 103
+        Top = 64
+        Width = 434
+        Height = 14
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Curso:')
+      end
+      object txtObjGeral: TPRText
+        Left = 103
+        Top = 94
+        Width = 434
+        Height = 14
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Curso:')
+      end
+    end
+    object PRLayoutPanel2: TPRLayoutPanel
+      Left = 18
+      Top = 150
+      Width = 567
+      Height = 287
+      object PRText5: TPRText
+        Left = 0
+        Top = 21
+        Width = 33
+        Height = 17
+        FontColor = clNavy
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'N'#237'vel:')
+      end
+      object txtNivel: TPRText
+        Left = 39
+        Top = 21
+        Width = 81
+        Height = 17
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'N'#237'vel:')
+      end
+      object txttcurso: TPRText
+        Left = 0
+        Top = 57
+        Width = 97
+        Height = 17
+        FontColor = clNavy
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Tipo de Curso:')
+      end
+      object txtTipoCurso: TPRText
+        Left = 106
+        Top = 57
+        Width = 431
+        Height = 17
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'N'#237'vel:')
+      end
+      object txtlabelalvo: TPRText
+        Left = 0
+        Top = 95
+        Width = 97
+        Height = 17
+        FontColor = clNavy
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'P'#250'blico Alvo:')
+      end
+      object txtPublicoAlvo: TPRText
+        Left = 106
+        Top = 95
+        Width = 431
+        Height = 17
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'N'#237'vel:')
+      end
+      object txtlabelmin: TPRText
+        Left = 0
+        Top = 134
+        Width = 97
+        Height = 17
+        FontColor = clNavy
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Requisitos m'#237'nimos:')
+      end
+      object txtReqMin: TPRText
+        Left = 106
+        Top = 135
+        Width = 431
+        Height = 17
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'N'#237'vel:')
+      end
+      object txtlabelcurso: TPRText
+        Left = 0
+        Top = 171
+        Width = 97
+        Height = 17
+        FontColor = clNavy
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Hor'#225'rio do curso:')
+      end
+      object txtHorCurso: TPRText
+        Left = 106
+        Top = 171
+        Width = 431
+        Height = 17
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'N'#237'vel:')
+      end
+      object txtlabelch: TPRText
+        Left = 0
+        Top = 209
+        Width = 97
+        Height = 17
+        FontColor = clNavy
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Carga Hor'#225'ria:')
+      end
+      object txtCargHoraria: TPRText
+        Left = 106
+        Top = 210
+        Width = 431
+        Height = 17
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'N'#237'vel:')
+      end
+      object txtQuantidade: TPRText
+        Left = 0
+        Top = 246
+        Width = 97
+        Height = 17
+        FontColor = clNavy
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Quantidade de Vagas:')
+      end
+      object txtQuantidadeVagas: TPRText
+        Left = 106
+        Top = 246
+        Width = 431
+        Height = 17
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'N'#237'vel:')
+      end
+    end
+    object PRLayoutPanel3: TPRLayoutPanel
+      Left = 18
+      Top = 440
+      Width = 567
+      Height = 577
+      object txtEmenta: TPRText
+        Left = 106
+        Top = 19
+        Width = 431
+        Height = 102
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'N'#237'vel:')
+      end
+      object PRText7: TPRText
+        Left = 0
+        Top = 19
+        Width = 97
+        Height = 17
+        FontColor = clNavy
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Ementa:')
+      end
+      object PRText6: TPRText
+        Left = 0
+        Top = 127
+        Width = 97
+        Height = 17
+        FontColor = clNavy
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Instrumentos:')
+      end
+      object txtInstrumentos: TPRText
+        Left = 106
+        Top = 127
+        Width = 431
+        Height = 102
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'N'#237'vel:')
+      end
+      object txtMetodologia: TPRText
+        Left = 106
+        Top = 235
+        Width = 431
+        Height = 102
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'N'#237'vel:')
+      end
+      object PRText9: TPRText
+        Left = 0
+        Top = 235
+        Width = 97
+        Height = 17
+        FontColor = clNavy
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Metodologia:')
+      end
+      object txtProcessoAvaliativo: TPRText
+        Left = 106
+        Top = 343
+        Width = 431
+        Height = 102
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'N'#237'vel:')
+      end
+      object PRText10: TPRText
+        Left = 0
+        Top = 343
+        Width = 97
+        Height = 17
+        FontColor = clNavy
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Processo Avaliativo:')
+      end
+      object txtReferencias: TPRText
+        Left = 106
+        Top = 451
+        Width = 431
+        Height = 102
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'N'#237'vel:')
+      end
+      object PRText11: TPRText
+        Left = 0
+        Top = 451
+        Width = 97
+        Height = 17
+        FontColor = clNavy
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Refer'#234'ncias:')
+      end
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 8
+    Top = 8
+    Width = 553
+    Height = 617
+    ActivePage = TabSheet2
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'Step 1'
+      object Label4: TLabel
+        Left = 191
+        Top = 16
+        Width = 90
+        Height = 13
+        Caption = 'PLANO DE ENSINO'
+      end
+      object Label5: TLabel
+        Left = 24
+        Top = 54
+        Width = 77
+        Height = 13
+        Caption = 'Nome do Curso:'
+      end
+      object Label6: TLabel
+        Left = 24
+        Top = 94
+        Width = 92
+        Height = 13
+        Caption = 'Nome do Instrutor:'
+      end
+      object Label7: TLabel
+        Left = 28
+        Top = 134
+        Width = 73
+        Height = 13
+        Caption = 'Obejtivo Geral:'
+      end
+      object edtNomeCurso: TEdit
+        Left = 117
+        Top = 51
+        Width = 236
+        Height = 21
+        TabOrder = 0
+      end
+      object edtNomeInstrutor: TEdit
+        Left = 117
+        Top = 91
+        Width = 236
+        Height = 21
+        TabOrder = 1
+      end
+      object edtObjGeral: TEdit
+        Left = 117
+        Top = 126
+        Width = 236
+        Height = 21
+        TabOrder = 2
+      end
+      object GroupBox1: TGroupBox
+        Left = 16
+        Top = 184
+        Width = 465
+        Height = 324
+        Caption = 'CARACTERISTICAS DO CURSO'
+        TabOrder = 3
+        object Label8: TLabel
+          Left = 32
+          Top = 160
+          Width = 61
+          Height = 13
+          Caption = 'P'#250'blico Alvo:'
+        end
+        object Label9: TLabel
+          Left = 20
+          Top = 187
+          Width = 72
+          Height = 13
+          Caption = 'Requisitos min:'
+        end
+        object Label10: TLabel
+          Left = 16
+          Top = 214
+          Width = 79
+          Height = 13
+          Caption = 'Datas do curso :'
+        end
+        object Label11: TLabel
+          Left = 21
+          Top = 240
+          Width = 74
+          Height = 13
+          Caption = 'Carga Hor'#225'ria :'
+        end
+        object Label12: TLabel
+          Left = 7
+          Top = 270
+          Width = 88
+          Height = 13
+          Caption = 'N'#250'mero de Vagas:'
+        end
+        object rgNivel: TRadioGroup
+          Left = 16
+          Top = 31
+          Width = 185
+          Height = 105
+          Caption = 'N'#237'vel'
+          ItemIndex = 0
+          Items.Strings = (
+            'B'#225'sico'
+            'Intermedi'#225'rio'
+            'Avan'#231'ado')
+          TabOrder = 0
+        end
+        object rgTipoCurso: TRadioGroup
+          Left = 256
+          Top = 32
+          Width = 185
+          Height = 105
+          Caption = 'Tipo do Curso'
+          ItemIndex = 0
+          Items.Strings = (
+            'Te'#243'rico'
+            'Pr'#225'tico'
+            'Te'#243'rico-pr'#225'tico')
+          TabOrder = 1
+        end
+        object edtPublicoAlvo: TEdit
+          Left = 101
+          Top = 157
+          Width = 236
+          Height = 21
+          TabOrder = 2
+        end
+        object edtRequisitos: TEdit
+          Left = 101
+          Top = 184
+          Width = 236
+          Height = 21
+          TabOrder = 3
+        end
+        object dtpDataCurso: TDateTimePicker
+          Left = 101
+          Top = 211
+          Width = 236
+          Height = 21
+          Date = 44175.000000000000000000
+          Time = 0.888140914350515200
+          TabOrder = 4
+        end
+        object UpDown1: TUpDown
+          Left = 343
+          Top = 237
+          Width = 17
+          Height = 25
+          TabOrder = 5
+        end
+        object edtCargaHoraria: TEdit
+          Left = 101
+          Top = 238
+          Width = 236
+          Height = 21
+          TabOrder = 6
+        end
+        object edtNumVagas: TEdit
+          Left = 101
+          Top = 268
+          Width = 236
+          Height = 21
+          TabOrder = 7
+        end
+      end
+      object Button5: TButton
+        Left = 344
+        Top = 529
+        Width = 137
+        Height = 41
+        Caption = 'Next'
+        TabOrder = 4
+        OnClick = Button5Click
+      end
+      object btGerarPDF: TBitBtn
+        Left = 77
+        Top = 529
+        Width = 224
+        Height = 41
+        Caption = 'Gerar PDF'
+        TabOrder = 5
+        OnClick = btGerarPDFClick
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Step 2'
+      ImageIndex = 1
+      object Label13: TLabel
+        Left = 16
+        Top = 21
+        Width = 40
+        Height = 13
+        Caption = 'Ementa:'
+      end
+      object Label14: TLabel
+        Left = 16
+        Top = 197
+        Width = 68
+        Height = 13
+        Caption = 'Instrumentos:'
+      end
+      object Label15: TLabel
+        Left = 16
+        Top = 373
+        Width = 62
+        Height = 13
+        Caption = 'Metodologia:'
+      end
+      object reEmenta: TRichEdit
+        Left = 16
+        Top = 40
+        Width = 481
+        Height = 121
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+        Zoom = 100
+      end
+      object reInstrumentos: TRichEdit
+        Left = 16
+        Top = 216
+        Width = 481
+        Height = 121
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+        Zoom = 100
+      end
+      object reMetodologia: TRichEdit
+        Left = 16
+        Top = 392
+        Width = 481
+        Height = 121
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+        Zoom = 100
+      end
+      object Button4: TButton
+        Left = 360
+        Top = 528
+        Width = 137
+        Height = 41
+        Caption = 'Next'
+        TabOrder = 3
+        OnClick = Button4Click
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Step 3'
+      ImageIndex = 2
+      object Label16: TLabel
+        Left = 24
+        Top = 37
+        Width = 96
+        Height = 13
+        Caption = 'Processo avaliativo:'
+      end
+      object Label17: TLabel
+        Left = 24
+        Top = 213
+        Width = 89
+        Height = 13
+        Caption = 'Bibliografia b'#225'sica:'
+      end
+      object reProcessoAvaliativo: TRichEdit
+        Left = 24
+        Top = 56
+        Width = 481
+        Height = 121
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+        Zoom = 100
+      end
+      object reReferencia: TRichEdit
+        Left = 24
+        Top = 232
+        Width = 481
+        Height = 121
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+        Zoom = 100
+      end
+      object Button1: TButton
+        Left = 24
+        Top = 416
+        Width = 137
+        Height = 41
+        Caption = 'Gerar Arquivo'
+        TabOrder = 2
+      end
+      object Button2: TButton
+        Left = 192
+        Top = 416
+        Width = 137
+        Height = 41
+        Caption = 'Close'
+        TabOrder = 3
+      end
+      object Button3: TButton
+        Left = 368
+        Top = 416
+        Width = 137
+        Height = 41
+        Caption = 'Limpar Campos'
+        TabOrder = 4
+      end
+    end
+  end
+  object PReport1: TPReport
+    FileName = 'default.pdf'
+    CreationDate = 44175.946595474540000000
+    UseOutlines = False
+    ViewerPreference = []
+    Left = 640
+    Top = 8
+  end
+end

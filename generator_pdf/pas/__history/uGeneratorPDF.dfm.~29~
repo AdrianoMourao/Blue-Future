@@ -1,0 +1,182 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'GeneratorPDF'
+  ClientHeight = 229
+  ClientWidth = 279
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 8
+    Width = 28
+    Height = 13
+    Caption = 'Curso'
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 56
+    Width = 43
+    Height = 13
+    Caption = 'Instrutor'
+  end
+  object Label3: TLabel
+    Left = 8
+    Top = 104
+    Width = 68
+    Height = 13
+    Caption = 'Objetivo geral'
+  end
+  object PRPage1: TPRPage
+    Left = 584
+    Top = 0
+    Width = 657
+    Height = 842
+    MarginTop = 32
+    MarginLeft = 32
+    MarginRight = 32
+    MarginBottom = 32
+    object PRLayoutPanel1: TPRLayoutPanel
+      Left = 18
+      Top = 18
+      Width = 568
+      Height = 134
+      object PRText1: TPRText
+        Left = 264
+        Top = 8
+        Width = 121
+        Height = 14
+        FontColor = 7865622
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'PLANO DE ENSINO')
+      end
+      object PRText2: TPRText
+        Left = 0
+        Top = 32
+        Width = 97
+        Height = 14
+        FontColor = 7865622
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Curso:')
+      end
+      object PRText3: TPRText
+        Left = 0
+        Top = 64
+        Width = 97
+        Height = 14
+        FontColor = 7865622
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Instrutor:')
+      end
+      object PRText4: TPRText
+        Left = 0
+        Top = 94
+        Width = 97
+        Height = 14
+        FontColor = 7865622
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Objetivo geral:')
+      end
+      object txtCurso: TPRText
+        Left = 103
+        Top = 32
+        Width = 434
+        Height = 14
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Curso:')
+      end
+      object txtInstrutor: TPRText
+        Left = 103
+        Top = 64
+        Width = 434
+        Height = 14
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Curso:')
+      end
+      object txtObjGeral: TPRText
+        Left = 103
+        Top = 94
+        Width = 434
+        Height = 14
+        FontName = fnArial
+        FontSize = 13.000000000000000000
+        FontBold = True
+        Leading = 14.000000000000000000
+        Lines.Strings = (
+          'Curso:')
+      end
+    end
+  end
+  object btGerarPDF: TBitBtn
+    Left = 8
+    Top = 162
+    Width = 264
+    Height = 57
+    Caption = 'Gerar PDF'
+    TabOrder = 1
+    OnClick = btGerarPDFClick
+  end
+  object edtCurso: TEdit
+    Left = 8
+    Top = 27
+    Width = 121
+    Height = 21
+    TabOrder = 2
+  end
+  object edtInstrutor: TEdit
+    Left = 8
+    Top = 75
+    Width = 121
+    Height = 21
+    TabOrder = 3
+  end
+  object edtObjGeral: TEdit
+    Left = 8
+    Top = 123
+    Width = 121
+    Height = 21
+    TabOrder = 4
+  end
+  object PReport1: TPReport
+    FileName = 'default.pdf'
+    CreationDate = 44175.946595474540000000
+    UseOutlines = False
+    ViewerPreference = []
+    Left = 640
+    Top = 8
+  end
+end
